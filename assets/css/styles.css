@@ -1,0 +1,48 @@
+/* Tipografía más limpia */
+body {
+  font-family: system-ui, sans-serif;
+}
+
+/* Botones */
+.btn-primary {
+  background: #ff7a00;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* WhatsApp */
+.btn-whatsapp {
+  background: #25d366;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+/* Títulos */
+.title-section {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Cards estilo TEMU */
+.product-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card:hover img {
+  transform: scale(1.05);
+}

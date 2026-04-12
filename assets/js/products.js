@@ -1,0 +1,58 @@
+const products = [
+  {
+    id: 1,
+    name: "Motor 15HP Yamaha",
+    price: 3500000,
+    image: "assets/images/motorEarrow_15.jpg",
+    category: "marino",
+  },
+  {
+    id: 2,
+    name: "Hélice Yamaha",
+    price: 250000,
+    image: "assets/images/heliceMotor.jpg",
+    category: "marino",
+  },
+  {
+    id: 3,
+    name: "Guadañadora 52cc",
+    price: 900000,
+    image: "assets/images/Guadaña_Proesional_Fujita.jpg",
+    category: "agro",
+  },
+  {
+    id: 4,
+    name: "Aceite 2T",
+    price: 45000,
+    image: "assets/images/lubricante-aceite-fd.png",
+    category: "herramienta",
+  },
+  {
+    id: 5,
+    name: "Aceite 2T",
+    price: 45000,
+    image: "assets/images/motorfb.png",
+    category: "herramienta",
+  },
+  {
+    id: 6,
+    name: "Grasa para motores",
+    price: 45000,
+    image: "assets/images/grasa.jpg",
+    category: "herramienta",
+  },
+  {
+    id: 7,
+    name: "Generador eléctrico",
+    price: 45000,
+    image: "assets/images/generador.png",
+    category: "herramienta",
+  },
+  {
+    id: 8,
+    name: "Filtro de aire",
+    price: 45000,
+    image: "assets/images/filtro.jpg",
+    category: "herramienta",
+  },
+];
