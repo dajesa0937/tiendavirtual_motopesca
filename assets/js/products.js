@@ -38,7 +38,7 @@ const products = [
     id: 6,
     name: "Grasa para motores",
     price: 45000,
-    image: "assets/images/grasa.jpg",
+    image: "assets/images/Grasa.jpg",
     category: "herramienta",
   },
   {
