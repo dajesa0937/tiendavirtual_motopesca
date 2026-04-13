@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Motor 15HP Yamaha",
     price: 3500000,
-    image: "assets/images/motorEarrow_15.png",
+    image: "assets/images/motorEarrow15.png",
     category: "marino",
   },
   {
@@ -17,14 +17,14 @@ const products = [
     id: 3,
     name: "Culata 15 Yamaha",
     price: 900000,
-    image: "assets/images/Culata_15_Yamaha.jpg",
+    image: "assets/images/Culata_15_yamaha.jpg",
     category: "agro",
   },
   {
     id: 4,
     name: "Aceite 2T",
     price: 45000,
-    image: "assets/images/aceite_2t_durespo.png",
+    image: "assets/images/aceite_2t_durespo.jpg",
     category: "herramienta",
   },
   {
