@@ -17,7 +17,7 @@ const products = [
     id: 3,
     name: "Culata 15 Yamaha",
     price: 900000,
-    image: "assets/images/Culata_15_yamaha.jpg",
+    image: "assets/images/culata_15_yamaha.jpg",
     category: "agro",
   },
   {
@@ -45,7 +45,7 @@ const products = [
     id: 7,
     name: "Motosierra Fujita",
     price: 45000,
-    image: "assets/images/Motosierra-fujita-FC452545-1-50-1536x840.jpg",
+    image: "assets/images/motosierra_fujita45.jpg",
     category: "herramienta",
   },
   {
