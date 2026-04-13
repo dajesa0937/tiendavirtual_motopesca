@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motopesca Marine & Agro</title>
 
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
@@ -29,16 +26,19 @@
           </div>
         </div>
 
-        <nav class="hidden md:flex gap-6">
-          <a href="#">Inicio</a>
-          <a href="#">Repuestos</a>
-          <a href="#">Agro</a>
-          <a href="#">Herramientas</a>
-          <a href="#">Ofertas</a>
-          <a href="#">Contacto</a>
+        <nav class="hidden md:flex gap-6 font-medium">
+          <a href="#" class="hover:text-[#00BFFF]">Inicio</a>
+          <a href="#" class="hover:text-[#00BFFF]">Repuestos</a>
+          <a href="#" class="hover:text-[#00BFFF]">Agro</a>
+          <a href="#" class="hover:text-[#00BFFF]">Herramientas</a>
+          <a href="#" class="hover:text-[#00BFFF]">Ofertas</a>
+          <a href="#" class="hover:text-[#00BFFF]">Contacto</a>
         </nav>
 
-        <button id="cart-btn" class="bg-[#FF7A00] px-4 py-2 rounded-lg">
+        <button
+          id="cart-btn"
+          class="bg-[#FF7A00] px-4 py-2 rounded-lg shadow hover:bg-orange-600 transition"
+        >
           🛒 <span id="cart-count">0</span>
         </button>
       </div>
@@ -68,12 +68,22 @@
       ></div>
     </section>
 
+    <!-- OVERLAY -->
+    <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
     <!-- CARRITO -->
     <div
       id="cart"
-      class="fixed right-0 top-0 w-80 h-full bg-white shadow-xl p-6 hidden z-50"
+      class="fixed right-0 top-0 w-80 h-full bg-white shadow-xl p-6 z-50 transform translate-x-full transition-transform duration-300"
     >
-      <h2 class="font-bold text-xl mb-4">Carrito</h2>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="font-bold text-xl">Carrito</h2>
+
+        <button id="close-cart" class="text-xl font-bold hover:text-red-500">
+          ✖
+        </button>
+      </div>
+
       <div id="cart-items"></div>
 
       <p class="mt-4 font-bold">Total: $<span id="total">0</span></p>
@@ -86,7 +96,7 @@
       </a>
     </div>
 
-    <!-- BOTÓN WHATSAPP -->
+    <!-- WHATSAPP -->
     <a
       href="https://wa.me/573108394870"
       class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg"
@@ -94,115 +104,91 @@
       💬
     </a>
 
-    <!-- FOOTER PROFESIONAL -->
-<footer class="bg-[#0A2540] text-white mt-20">
+    <!-- FOOTER ORIGINAL TUYO (CORREGIDO) -->
+    <footer class="bg-[#0A2540] text-white mt-20">
+      <div class="container mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
+        <!-- MARCA -->
+        <div>
+          <img src="assets/images/logo.png" class="h-20 mb-4" />
 
-  <div class="container mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
+          <h3 class="font-bold text-xl tracking-wide">
+            Motopesca Marine & Agro
+          </h3>
 
-    <!-- MARCA -->
-    <div>
-      <img src="assets/images/logo.png" class="h-20 mb-4">
+          <p class="text-sm text-gray-300 mt-3 leading-relaxed">
+            Especialistas en repuestos marinos, maquinaria agrícola y
+            herramientas. Potencia y confianza para el agua y el campo.
+          </p>
 
-      <h3 class="font-bold text-xl tracking-wide">
-        Motopesca Marine & Agro
-      </h3>
+          <div class="flex gap-3 mt-5">
+            <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-[#00BFFF]"
+              >📘</a
+            >
+            <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-[#00BFFF]"
+              >📸</a
+            >
+            <a
+              href="https://wa.me/573108394870"
+              class="bg-white/10 p-2 rounded-full hover:bg-green-500"
+              >💬</a
+            >
+          </div>
+        </div>
 
-      <p class="text-sm text-gray-300 mt-3 leading-relaxed">
-        Especialistas en repuestos marinos, maquinaria agrícola y herramientas.
-        Potencia y confianza para el agua y el campo.
-      </p>
+        <!-- NAVEGACIÓN -->
+        <div>
+          <h4 class="font-semibold mb-4 text-[#00BFFF] text-lg">Navegación</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-[#00BFFF]">Inicio</a></li>
+            <li><a href="#" class="hover:text-[#00BFFF]">Repuestos</a></li>
+            <li><a href="#" class="hover:text-[#00BFFF]">Agro</a></li>
+            <li><a href="#" class="hover:text-[#00BFFF]">Herramientas</a></li>
+            <li><a href="#" class="hover:text-[#00BFFF]">Ofertas</a></li>
+          </ul>
+        </div>
 
-      <!-- REDES -->
-      <div class="flex gap-3 mt-5">
+        <!-- CONTACTO -->
+        <div>
+          <h4 class="font-semibold mb-4 text-[#00BFFF] text-lg">Contacto</h4>
+          <ul class="text-sm space-y-2">
+            <li>📍 Medellín - Colombia</li>
+            <li>📞 310 839 4870</li>
+            <li>
+              <a
+                href="https://dajesa0937.github.io/tiendavirtual_motopesca/"
+                target="_blank"
+                class="hover:text-[#00BFFF]"
+              >
+                🌐 Ver tienda online
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <a href="#" target="_blank"
-           class="bg-white/10 p-2 rounded-full hover:bg-[#00BFFF] transition">
-          📘
-        </a>
+        <!-- CTA -->
+        <div>
+          <h4 class="font-semibold mb-4 text-[#00BFFF] text-lg">
+            Atención inmediata
+          </h4>
 
-        <a href="#" target="_blank"
-           class="bg-white/10 p-2 rounded-full hover:bg-[#00BFFF] transition">
-          📸
-        </a>
+          <p class="text-sm text-gray-300 mb-4">
+            Contáctanos directamente por WhatsApp para cotizaciones rápidas.
+          </p>
 
-        <a href="https://wa.me/573108394870" target="_blank"
-           class="bg-white/10 p-2 rounded-full hover:bg-green-500 transition">
-          💬
-        </a>
-
-      </div>
-    </div>
-
-    <!-- NAVEGACIÓN -->
-    <div>
-      <h4 class="font-semibold mb-4 text-[#00BFFF] text-lg">
-        Navegación
-      </h4>
-
-      <ul class="space-y-2 text-sm">
-        <li><a href="#" class="hover:text-[#00BFFF] transition">Inicio</a></li>
-        <li><a href="#" class="hover:text-[#00BFFF] transition">Repuestos</a></li>
-        <li><a href="#" class="hover:text-[#00BFFF] transition">Agro</a></li>
-        <li><a href="#" class="hover:text-[#00BFFF] transition">Herramientas</a></li>
-        <li><a href="#" class="hover:text-[#00BFFF] transition">Ofertas</a></li>
-      </ul>
-    </div>
-
-    <!-- CONTACTO -->
-    <div>
-      <h4 class="font-semibold mb-4 text-[#00BFFF] text-lg">
-        Contacto
-      </h4>
-
-      <ul class="text-sm space-y-2">
-        <li>📍 Medellín - Colombia</li>
-        <li>📞 310 839 4870</li>
-
-        <li>
-          <a href="https://dajesa0937.github.io/tiendavirtual_motopesca/"
-             target="_blank"
-             class="hover:text-[#00BFFF] transition">
-            🌐 Ver tienda online
+          <a
+            href="https://wa.me/573108394870"
+            class="block bg-green-500 text-center py-3 rounded-lg font-bold"
+          >
+            💬 Hablar por WhatsApp
           </a>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </div>
 
-    <!-- CTA (VENTAS) -->
-    <div>
-      <h4 class="font-semibold mb-4 text-[#00BFFF] text-lg">
-        Atención inmediata
-      </h4>
-
-      <p class="text-sm text-gray-300 mb-4">
-        Contáctanos directamente por WhatsApp para cotizaciones rápidas.
-      </p>
-
-      <a href="https://wa.me/573108394870"
-         target="_blank"
-         class="block bg-green-500 text-center py-3 rounded-lg font-bold hover:bg-green-600 transition">
-         💬 Hablar por WhatsApp
-      </a>
-    </div>
-
-  </div>
-
-  <!-- LINEA FINAL -->
-  <div class="border-t border-white/20 py-4 text-center text-sm text-gray-400">
-
-    <p>
-      © 2026 Motopesca Marine & Agro · Todos los derechos reservados
-    </p>
-
-    <p class="mt-1 text-xs">
-      Diseño profesional · Comercio electrónico Colombia
-    </p>
-
-  </div>
-
-</footer>
-
-       
+      <div
+        class="border-t border-white/20 py-4 text-center text-sm text-gray-400"
+      >
+        © 2026 Motopesca Marine & Agro · Todos los derechos reservados
+      </div>
     </footer>
 
     <!-- JS -->
