@@ -54,3 +54,14 @@ footer a {
 footer a:hover {
   transform: translateY(-2px);
 }
+/* CONTENEDOR IMAGEN UNIFORME */
+.product-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* EFECTO HOVER SUAVE */
+.product-card:hover img {
+  transform: scale(1.08);
+}
